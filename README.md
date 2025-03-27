@@ -11,6 +11,7 @@ Table of Contents
 <a href="#5">User Stories</a>
 <a href="#6">Minimum Viable Product</a>
 </details>
+</details>
 
 <h2 id="1"></h2>
 <h2 id="2">UX - Planning & Goals</h2>
