@@ -1,5 +1,18 @@
-<h2 id="1">The English Studio Website</h2>
+<h1 align="center"> Welcome to The English Studio </h1> <img src="assets/images/readmetitle.webp" alt="Learn English with The English Studio" width="100%"/>
+The English Studio is an English language school based in Milan, Italy, that offers a wide range of courses designed to cater to the needs of students of all ages and backgrounds. The purpose of this website is to provide an accessible and user-friendly platform where potential students can book classes, learn about available courses, and access resources such as blog posts with language learning tips and test preparation advice. This website is also designed to help Italian parents, individuals seeking to study abroad, and professionals looking to improve their English skills for business and everyday situations.
 
+The main goal of the website is to create a comprehensive, easy-to-navigate online environment where users can learn more about the school, book lessons, and engage with content relevant to their English learning goals. The site combines simplicity and functionality, showcasing The English Studio’s courses, booking system, and blog, while providing a seamless and modern user experience.
+
+Table of Contents
+
+<details> <summary><a href="#1">UX</a></summary> <details> <summary><a href="#2">Planning & Goals</a></summary>
+<a href="#3">Business Goals</a>
+<a href="#4">User Profiles</a>
+<a href="#5">User Stories</a>
+<a href="#6">Minimum Viable Product</a>
+</details>
+
+<h2 id="1"></h2>
 <h2 id="2">UX - Planning & Goals</h2>
 
 <h3 id="3">1. Business Goals</h3>
