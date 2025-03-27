@@ -1,7 +1,12 @@
-<h1 align="center"> Welcome to The English Studio </h1> <img src="BadgeLogoFull PNG.png" alt="Learn English with The English Studio" width="50%" style="margin-right: 20px;"/>
-The English Studio is an English language school based in Milan, Italy, that offers a wide range of courses designed to cater to the needs of students of all ages and backgrounds. The purpose of this website is to provide an accessible and user-friendly platform where potential students can book classes, learn about available courses, and access resources such as blog posts with language learning tips and test preparation advice. This website is also designed to help Italian parents, individuals seeking to study abroad, and professionals looking to improve their English skills for business and everyday situations.
+<h1 align="center"> Welcome to The English Studio </h1> <h1 align="center"> Welcome to The English Studio </h1>
 
-The main goal of the website is to create a comprehensive, easy-to-navigate online environment where users can learn more about the school, book lessons, and engage with content relevant to their English learning goals. The site combines simplicity and functionality, showcasing The English Studio’s courses, booking system, and blog, while providing a seamless and modern user experience.
+<div style="display: flex; align-items: center;">
+    <img src="BadgeLogoFull PNG.png" alt="Learn English with The English Studio" width="50%" style="margin-right: 20px;"/>
+    <p>The English Studio is an English language school based in Milan, Italy, that offers a wide range of courses designed to cater to the needs of students of all ages and backgrounds. The purpose of this website is to provide an accessible and user-friendly platform where potential students can book classes, learn about available courses, and access resources such as blog posts with language learning tips and test preparation advice. This website is also designed to help Italian parents, individuals seeking to study abroad, and professionals looking to improve their English skills for business and everyday situations.</p>
+
+    <p>The main goal of the website is to create a comprehensive, easy-to-navigate online environment where users can learn more about the school, book lessons, and engage with content relevant to their English learning goals. The site combines simplicity and functionality, showcasing The English Studio’s courses, booking system, and blog, while providing a seamless and modern user experience.</p>
+</div>
+
 
 Table of Contents
 
