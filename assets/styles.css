@@ -4,6 +4,7 @@
 /*text navy*/
 body {
     background-color: #fdfbf6 !important;
+    padding: 20px;
 }
 .navy {
     color: #37376B !important;
@@ -85,42 +86,56 @@ body {
     height: 140px;   
 }
 
+.carousel-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
 
+.carouseloverlay {
+  position: absolute;
+  z-index: 2;
+}
 
 @media (max-width: 768px) {
-    .carousel-background-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(55, 55, 107, 0.651); /* Semi-transparent navy */
-        z-index: 1;
-        pointer-events: none;
-        padding: 0 !important;
-      }
+  .carouseloverlay {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    position: absolute !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 90% !important;
+    padding: 1rem !important;
+    background-color: rgba(55, 55, 107, 0.651);
+    border-radius: 1rem;
+  }
 
-    .carouseloverlay {
-      top: 50% !important;
-      left: 50% !important;
-      bottom: auto !important;
-      transform: translate(-50%, -50%) !important;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem !important;
-      max-width: 90% !important;
-      z-index: 2 !important;
+ .smallerheader {
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+  }
+
+  .smallertext {
+    font-size: 12px !important;
+    line-height: 1.2 !important;
+  }
+
+  .smallerbtn {
+    font-size: 12px !important;
+    padding: 0.5rem 1rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 50px;
     }
-  }
-
-  #heroCarousel {
-    border-radius: 0px;
-  }
-
-  @media (max-width: 440px) {
-    .carouseloverlay {
-      transform: scale(0.6);
-  }
 }
