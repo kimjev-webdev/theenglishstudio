@@ -21,8 +21,9 @@
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
+  <header>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-white py-3">
+  <nav class="navbar navbar-expand-lg py-3">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="assets/images/logofull.webp" alt="The English Studio Logo" height="120">
@@ -32,11 +33,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto text-uppercase fw-bold">
-          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="#">Courses</a></li>
-          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="#">Blog</a></li>
-          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="#">Events</a></li>
-          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="contact.html">Contact</a></li>
         </ul>
         <div class="ms-3">
           <img src="https://flagcdn.com/16x12/gb.png" alt="English" class="me-1" style="cursor:pointer;">
@@ -46,23 +47,55 @@
     </div>
   </nav>
 
-  <!-- Hero Carousel -->
-   <div class="container">
+<!-- Hero Carousel -->
+<div class="container position-relative p-0">
+  <!-- Full overlay on top of carousel -->
+  <div class="carousel-background-overlay"></div>
+
   <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets\images\afterschoolclub.webp" class="d-block w-100" alt="Blackboard with chalk image of Union Jack">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active position-relative">
+        <img src="assets/images/afterschoolclub.webp" class="d-block w-100 cimage" alt="Blackboard with chalk image of Union Jack">
+        <div class="position-absolute bottom-0 start-0 text-white ps-4 pb-4 carouseloverlay" style="max-width: 40%;">
+          <h3 class="primaryfont">After School Club</h3>
+          <p class="body-text">Making friends and learning English is so fun!</p>
+          <a href="#" class="btn btn-red primaryfont">Learn More</a>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="assets\images\businessandgeneral.webp" class="d-block w-100" alt="Briefcase on a desk with a sticker which says 'I love London">
+
+      <!-- Slide 2 -->
+      <div class="carousel-item position-relative">
+        <img src="assets/images/businessandgeneral.webp" class="d-block w-100 cimage" alt="Briefcase on a desk with a sticker which says 'I love London">
+        <div class="position-absolute bottom-0 start-0 text-white ps-4 pb-4 carouseloverlay" style="max-width: 40%;">
+          <h3 class="primaryfont">Business English</h3>
+          <p class="body-text">Study to access a world of great opportunities.</p>
+          <a href="#" class="btn btn-red primaryfont">Learn More</a>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="assets\images\privatelessons.webp" class="d-block w-100" alt="An open book with a globe resting on it">
+
+      <!-- Slide 3 -->
+      <div class="carousel-item position-relative">
+        <img src="assets/images/privatelessons.webp" class="d-block w-100 cimage" alt="A classic library shelf full of antique books">
+        <div class="position-absolute bottom-0 start-0 text-white ps-4 pb-4 carouseloverlay" style="max-width: 40%;">
+          <h3 class="primaryfont">Private Tutoring</h3>
+          <p class="body-text">Personalized support to help you reach your goals.</p>
+          <a href="#" class="btn btn-red primaryfont">Learn More</a>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="assets\images\studyenglish.webp" class="d-block w-100" alt="A view of library shelves filled with books">
+
+      <!-- Slide 4 -->
+      <div class="carousel-item position-relative">
+        <img src="assets/images/studyenglish.webp" class="d-block w-100 cimage" alt="An open book with a globe resting on it">
+        <div class="position-absolute bottom-0 start-0 text-white ps-4 pb-4 carouseloverlay" style="max-width: 40%;">
+          <h3 class="primaryfont">IELTS Test Preps</h3>
+          <p class="body-text">Feel prepared to reach your highest potential.</p>
+          <a href="#" class="btn btn-red primaryfont">Learn More</a>
+        </div>
       </div>
     </div>
+
     <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon"></span>
     </button>
@@ -70,61 +103,83 @@
       <span class="carousel-control-next-icon"></span>
     </button>
   </div>
+</div>
+</header>
+
+<main>
+    <!-- Meet the Teacher Section -->
+    <section class="container py-5 text-center">
+      <img src="https://via.placeholder.com/200" class="rounded-circle mb-3" alt="Teacher">
+      <h1 class="navy primaryfont">I'm Leanne, nice to meet you!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed turpis vitae leo pretium feugiat.</p>
+      <a href="contact.html" class="btn btn-red primaryfont">Contact Me</a>
+    </section>
+  </div>
 
   <!-- 2x2 Grid Section -->
-  <section class="container py-5">
+  <section class="container mt-3">
+    <h2 class="text-center head-navy primaryfont mb-3 indexheader w-100">What We Offer</h2>
     <div class="row g-4">
       <div class="col-md-6">
         <div class="card h-100">
-          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="...">
+          <img src="assets\images\apple.webp" class="card-img-top icon-presets mt-3" alt="An apple with a bite taken out of it which reveals the Union Jack">
           <div class="card-body">
-            <h5 class="card-title navy primaryfont">After School Club</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 class="card-title red body-text text-center">AFTER SCHOOL CLUB</h3>
+            <p class="card-text navy body-text">Come and join us after school for 90 mins of full immersion English, with our native mother tongue
+                teacher who provides exciting and fun activities for primary school children. 
+            <p class="card-text navy">Expose your children
+              to the world and help them acquire fundamental language skills at a young age, preparing them for
+              their best possible future.</p>
+              <b class="card-text red body-text">Price from €22/90 mins.<br>Up to 8 children for each session.</b>
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="card h-100">
-          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="...">
+          <img src="assets\images\book.webp" class="card-img-top icon-presets mt-3" alt="An open book with a Union Jack on the pages">
           <div class="card-body">
-            <h5 class="card-title navy primaryfont">Private Tutor for Children</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 class="card-title red body-text text-center">PRIVATE ENGLISH LESSONS</h3>
+            <p class="card-text navy body-text">English lessons tailored to all your needs. Our professionally trained and well-experienced teacher
+                can help you define what you are looking for and together, we can reach your goals.
+            <p class="card-text navy body-text"> Imagine a life where you are fluent in English. If you can imagine it, we can achieve it.</p>
+            <br>
+            <b class="card-text red body-text">€27/60 mins children<br>€32/60 mins adults</b>
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="card h-100">
-          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="...">
+          <img src="assets\images\rosette.webp" class="card-img-top alt-icon-preset mt-4" alt="A rosette in colors of the Union Jack with A+ on it">
           <div class="card-body">
-            <h5 class="card-title navy primaryfont">IELTS Test Prep</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 class="card-title red body-text text-center">IELTS TEST PREP</h3>
+            <p class="card-text navy body-text navy">Specialising in IELTS test prep, learn all the tips and tricks you need in order to achieve the score
+              of your dreams!</p> 
+            <p class="body-text navy">Our teacher has an excellent record in helping students realise their goals through
+              her outstanding understanding of the difficult exam and how to navigate those high band scores.</p>
+            <br>
+            <b class="card-text red body-text">Price discussed on request.</b>
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="card h-100">
-          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="...">
+          <img src="assets\images\chat.webp" class="card-img-top alt-icon-preset mt-3" alt="A laptop with two figures and a speech bubble with a Union Jack inside it">
           <div class="card-body">
-            <h5 class="card-title navy primaryfont">Business & General English</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 class="card-title red body-text text-center">BUSINESS ENGLISH</h3>
+            <p class="card-text navy body-text">Available both online and in-person, finesse your Business English skills and get that promotion
+              you’ve always dreamed of.</p>
+            <p class="body-text navy">English is THE most widely spoken international business language and you are missing out on the top opportunities if you cannot express yourself properly! Together
+              with our teacher, we can put together a course tailored specifically for you and your needs.</p>
+            <b class="card-text red body-text">Also available in groups.<br>€32/60 mins</b>
           </div>
         </div>
       </div>
     </div>
     <div class="text-center headertext mt-4">
-      <a href="#" class="btn btn-red primaryfont">Learn More</a>
+      <a href="courses.html" class="btn btn-red primaryfont">Book Now</a>
     </div>
   </section>
-
-  <!-- Meet the Teacher Section -->
-  <section class="container py-5 text-center">
-    <img src="https://via.placeholder.com/200" class="rounded-circle mb-3" alt="Teacher">
-    <h2 class="navy primaryfont">I'm Leanne, nice to meet you!</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed turpis vitae leo pretium feugiat.</p>
-    <a href="#contact" class="btn btn-red primaryfont">Contact Us</a>
-  </section>
-</div>
-
+</main>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
