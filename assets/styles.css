@@ -4,7 +4,7 @@
 /*text navy*/
 body {
     background-color: #fdfbf6 !important;
-    padding: 20px;
+    padding: 1.5rem 20px;
 }
 .navy {
     color: #37376B !important;
@@ -136,6 +136,6 @@ body {
 
 @media (min-width: 768px) {
     body {
-        padding: 50px;
+        padding: 1.5rem 75px;
     }
 }
