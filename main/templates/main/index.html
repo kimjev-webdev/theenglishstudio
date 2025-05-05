@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
   <title>The English Studio</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="assets/images/logofull.webp" type="image/webp">
+  <link rel="icon" href="{% static 'main/images/logofull.webp' %}" type="image/webp">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cabin&display=swap" rel="stylesheet">
@@ -18,26 +19,26 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
 </head>
 <body>
   <header>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg pb-3">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/images/logofull.webp" alt="The English Studio Logo" height="120">
+      <a class="navbar-brand" href="{% static 'index.html' %}">
+        <img src="{% static 'main/images/logofull.webp' %}" alt="The English Studio Logo" height="120">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto text-uppercase fw-bold">
-          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="courses.html">Courses</a></li>
-          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="events.html">Events</a></li>
-          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="{% static 'main/templates/main/courses.html' %}">Courses</a></li>
+          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="{% static 'main/templates/main/about.html' %}">About</a></li>
+          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="{% static 'main/templates/main/blog.html' %}">Blog</a></li>
+          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="{% static 'main/templates/main/events.html' %}">Events</a></li>
+          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="{% static 'main/templates/main/contact.html' %}">Contact</a></li>
         </ul>
         <div class="ms-3">
           <img src="https://flagcdn.com/16x12/gb.png" alt="English" class="me-1" style="cursor:pointer;">
@@ -57,7 +58,7 @@
 
       <!-- Slide 1 -->
       <div class="carousel-item active position-relative">
-        <img src="assets/images/afterschoolclub.webp" class="d-block w-100 cimage" alt="Blackboard with chalk image of Union Jack">
+        <img src="{% static 'main/images/afterschoolclub.webp' %}" class="d-block w-100 cimage" alt="Blackboard with chalk image of Union Jack">
         <div class="position-absolute top-0 start-0 text-white p-4 carouseloverlay">
           <h3 class="primaryfont smallerheader">After School Club</h3>
           <p class="body-text smallertext">Making friends and learning English is so fun!</p>
@@ -67,7 +68,7 @@
 
       <!-- Slide 2 -->
       <div class="carousel-item position-relative">
-        <img src="assets/images/businessandgeneral.webp" class="d-block w-100 cimage" alt="Briefcase on a desk with a sticker which says 'I love London">
+        <img src="{% static 'main/images/businessandgeneral.webp' %}" class="d-block w-100 cimage" alt="Briefcase on a desk with a sticker which says 'I love London">
         <div class="position-absolute top-0 start-0 text-white p-4 carouseloverlay">
           <h3 class="primaryfont smallerheader">Business English</h3>
           <p class="body-text smallertext">Study to access a world of great opportunities.</p>
@@ -77,7 +78,7 @@
 
       <!-- Slide 3 -->
       <div class="carousel-item position-relative">
-        <img src="assets/images/privatelessons.webp" class="d-block w-100 cimage" alt="A classic library shelf full of antique books">
+        <img src="{% static 'main/images/privatelessons.webp' %}" class="d-block w-100 cimage" alt="A classic library shelf full of antique books">
         <div class="position-absolute top-0 start-0 text-white p-4 carouseloverlay">
           <h3 class="primaryfont smallerheader">Private Tutoring</h3>
           <p class="body-text smallertext">Personalized support to help you reach your goals.</p>
@@ -87,7 +88,7 @@
 
       <!-- Slide 4 -->
       <div class="carousel-item position-relative">
-        <img src="assets/images/studyenglish.webp" class="d-block w-100 cimage" alt="An open book with a globe resting on it">
+        <img src="{% static 'main/images/studyenglish.webp' %}" class="d-block w-100 cimage" alt="An open book with a globe resting on it">
         <div class="position-absolute top-0 start-0 text-white p-4 carouseloverlay" style="max-width: 40%;">
           <h3 class="primaryfont smallerheader">IELTS Test Preps</h3>
           <p class="body-text smallertext">Feel prepared to reach your highest potential.</p>
@@ -112,7 +113,7 @@
       <img src="https://via.placeholder.com/200" class="rounded-circle mb-3" alt="Teacher">
       <h1 class="navy primaryfont">I'm Leanne, nice to meet you!</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed turpis vitae leo pretium feugiat.</p>
-      <a href="contact.html" class="btn btn-red primaryfont">Contact Me</a>
+      <a href="{% static 'main/templates/main/contact.html' %}" class="btn btn-red primaryfont">Contact Me</a>
     </section>
   </div>
 
@@ -122,7 +123,7 @@
     <div class="row g-4">
       <div class="col-md-6" id="classes1">
         <div class="card h-100">
-          <img src="assets\images\apple.webp" class="card-img-top icon-presets mt-3" alt="An apple with a bite taken out of it which reveals the Union Jack">
+          <img src="{% static 'main/images/apple.webp' %}" class="card-img-top icon-presets mt-3" alt="An apple with a bite taken out of it which reveals the Union Jack">
           <div class="card-body">
             <h3 class="card-title red body-text text-center">AFTER SCHOOL CLUB</h3>
             <p class="card-text navy body-text">Come and join us after school for 90 mins of full immersion English, with our native mother tongue
@@ -136,7 +137,7 @@
       </div>
       <div class="col-md-6">
         <div class="card h-100" id="classes3">
-          <img src="assets\images\book.webp" class="card-img-top icon-presets mt-3" alt="An open book with a Union Jack on the pages">
+          <img src="{% static 'main/images/book.webp' %}" class="card-img-top icon-presets mt-3" alt="An open book with a Union Jack on the pages">
           <div class="card-body">
             <h3 class="card-title red body-text text-center">PRIVATE ENGLISH LESSONS</h3>
             <p class="card-text navy body-text">English lessons tailored to all your needs. Our professionally trained and well-experienced teacher
@@ -149,7 +150,7 @@
       </div>
       <div class="col-md-6">
         <div class="card h-100" id="classes4">
-          <img src="assets\images\rosette.webp" class="card-img-top alt-icon-preset mt-4" alt="A rosette in colors of the Union Jack with A+ on it">
+          <img src="{% static 'main/images/rosette.webp' %}" class="card-img-top alt-icon-preset mt-4" alt="A rosette in colors of the Union Jack with A+ on it">
           <div class="card-body">
             <h3 class="card-title red body-text text-center">IELTS TEST PREP</h3>
             <p class="card-text navy body-text navy">Specialising in IELTS test prep, learn all the tips and tricks you need in order to achieve the score
@@ -163,7 +164,7 @@
       </div>
       <div class="col-md-6" id="classes2">
         <div class="card h-100">
-          <img src="assets\images\chat.webp" class="card-img-top alt-icon-preset mt-3" alt="A laptop with two figures and a speech bubble with a Union Jack inside it">
+          <img src="{% static 'main/images/chat.webp' %}" class="card-img-top alt-icon-preset mt-3" alt="A laptop with two figures and a speech bubble with a Union Jack inside it">
           <div class="card-body">
             <h3 class="card-title red body-text text-center">BUSINESS ENGLISH</h3>
             <p class="card-text navy body-text">Available both online and in-person, finesse your Business English skills and get that promotion
@@ -176,7 +177,7 @@
       </div>
     </div>
     <div class="text-center headertext mt-4">
-      <a href="courses.html" class="btn btn-red primaryfont">Book Now</a>
+      <a href="{% static 'main/templates/main/courses.html' %}" class="btn btn-red primaryfont">Book Now</a>
     </div>
   </section>
 </main>

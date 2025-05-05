@@ -16,8 +16,10 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    path('admin/', admin.site.urls),
+    path('', include('main.urls')),  # This connects to your app's urls
 ]
+# The above code is a Django URL configuration file. It includes the admin site and the URLs from the 'main' app.
