@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - The English Studio</title>
+  <!-- Favicon -->
+  <link rel="icon" href="{% static 'main/images/logofull.webp' %}" type="image/webp">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cabin&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
+</head>
+<body>
+<header>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg pb-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% static 'index.html' %}">
+        <img src="{% static 'main/images/logofull.webp' %}" alt="The English Studio Logo" height="120">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-uppercase fw-bold">
+          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="">Courses</a></li>
+          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="">About</a></li>
+          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="">Blog</a></li>
+          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="">Events</a></li>
+          <li class="nav-item"><a class="nav-link navy primaryfont focusstyle" href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+        <div class="ms-3">
+          <img src="https://flagcdn.com/16x12/gb.png" alt="English" class="me-1" style="cursor:pointer;">
+          <img src="https://flagcdn.com/16x12/it.png" alt="Italian" style="cursor:pointer;">
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="container py-5">
+  <div class="row">
+    <!-- Contact Form -->
+    <section class="col-md-6">
+      <h2 class="primaryfont red mb-4">Contact Us</h2>
+      <form method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="fullName" class="form-label body-text navy">Full Name*</label>
+          <input type="text" class="form-control body-text navy" id="fullName" name="full_name" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label body-text navy">Email*</label>
+          <input type="email" class="form-control body-text navy" id="email" name="email" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="phone" class="form-label body-text navy">Phone*</label>
+          <input type="tel" class="form-control body-text navy" id="phone" name="phone" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="subject" class="form-label body-text navy">Subject*</label>
+          <select class="form-select body-text navy" id="subject" name="subject" required>
+            <option value="">Select an option</option>
+            <option>After School Club</option>
+            <option>Private Lessons</option>
+            <option>Business English Lessons</option>
+            <option>General English Lessons</option>
+            <option>IELTS Enquiry</option>
+            <option>Events</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label body-text navy">Message*</label>
+          <textarea class="form-control body-text navy" id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div class="form-check mb-3">
+          <input class="form-check-input btn-red" type="checkbox" id="subscribe" name="subscribe">
+          <label class="form-check-label body-text navy" for="subscribe">
+            Subscribe to newsletter
+          </label>
+        </div>
+
+        <button type="submit" class="btn primaryfont btn-red">Send Message</button>
+      </form>
+    </section>
+
+        <!-- Right Column: Direct Contact Info + Map -->
+        <section class="col-md-6">
+            <div class="contact-info">
+              <h3 class="red primaryfont">WHERE TO FIND US</h3>
+              <ul class="list-unstyled body-text navy lh-lg">
+                <li>
+                  <i class="fas fa-map-marker-alt fa-lg red"></i><strong> Address:</strong> Placeholder Address, City, Country
+                </li>
+                <li>
+                  <i class="fas fa-phone-alt fa-lg red"></i> <strong> Phone:</strong> +1234567890
+                </li>
+                <li>
+                  <i class="fas fa-envelope fa-lg red"></i> <strong> Email:</strong> theenglishstudiocorvetto@gmail.com
+              </ul>
+            </div>
+      
+            <!-- Map Section -->
+            <div class="map" style="height: 450px;">
+              <!-- Placeholder for Google Maps Embed -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=...YOUR_EMBED_URL..."
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe>
+            </div>
+        </section>
+    </div>
+
+  <!-- Google Maps Row -->
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

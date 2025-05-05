@@ -54,7 +54,21 @@ body {
     border: none;
   }
 
+.btn-navy {
+    background-color: #37376B !important;
+    color: #FFF;
+    border: none;
+  }
+
 /* hover state button styles*/
+.btn-navy:hover,
+.btn-navy:focus,
+.btn-navy:active {
+    background-color: #FF2727;
+    color: #FFF;
+    border: none;
+  }
+
 .btn-red:hover,
 .btn-red:focus {
     background-color: #37376B;
